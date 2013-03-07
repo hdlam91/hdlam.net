@@ -1,0 +1,156 @@
+/* Basic styling
+ */
+
+/*color map:
+bg 2e2e2e
+menu 000000
+body 191919
+body blend 989CA4
+left article border 004406
+
+*/
+body {
+    font-size: 16px;
+    color: #191919;
+    background: #2e2e2e;
+}
+
+
+/* colors of the links*/
+
+a:link {
+    color:#00AAFF;
+}     
+a:visited {
+    color:#990088;
+}
+a:hover {
+    color:#004406;
+}
+
+h1 {
+
+}
+header{
+    background: #2e2e2e;/*#228fd3*/
+    /*this basically makes the background color (if different from the body's bg match the content)*/
+    padding-left: 20px; /*pushes the text a little bit in to the content "collumn"*/
+    padding-bottom: 5px; /*makes space under the text*/
+    color: #ffffff;
+    padding-top: 50px;
+    margin-top: -50px;
+    margin-left: -10px;
+    margin-right: -10px;
+
+
+}
+
+
+
+header,  section {
+    
+}
+
+
+.container {
+    width: 860px;
+    margin: 0px auto;
+    background: #eee;
+    padding: 10px;
+    
+
+}
+
+article {
+    background: #ffffff;
+    padding:1em 2em;
+
+    margin:0 0 2em 0;
+    border-left:5px solid #004406;
+    border-bottom: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+}
+
+.date{
+
+    float: right;
+    color: #989CA4;
+    position: relative;
+    top: -10px;
+}
+
+
+footer{
+    text-align: center;
+}
+
+
+.endOfDocument{
+    width: 860px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+
+
+/* Menu
+--------------------------------------------- */
+
+
+.navigation {
+    position: relative;
+    top: -16px;
+    left: -10px;
+    /*these 2 lines above can be swapped with: margin-top: -16px;*/
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    height: 40px;
+    background:#000;
+    width:880px;
+    padding-bottom: 2px;
+
+}
+
+.navigation li {
+    float: left;
+    
+}
+
+.navigation a {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(img/div.jpg);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    
+
+}
+.navigation  .active a{
+    border-bottom: 2px solid #990088;    
+}
+
+.navigation  a:hover {
+    border-bottom: 50px solid: #00ff00;
+    color:#00ff00;
+    background: #ffffff;
+    border-bottom: 2px solid #00ff00;
+
+}
+.navigation li:nth-child(6) a { 
+    background-image: none;
+    /*removes the last divider*/
+
+  }
+
+.group:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
